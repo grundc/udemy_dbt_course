@@ -11,4 +11,4 @@ SELECT
     comments AS review_text,
     sentiment AS review_sentiment
 FROM
-    raw_reviews
+     {{ source('airbnb', 'reviews') }}
